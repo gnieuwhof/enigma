@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{64687FFD-CBAD-4C37-B1FE-CF5771E7C37C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{A671A1C4-053F-491B-B669-9B3AB47C34D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EnigmaConsole</RootNamespace>
-    <AssemblyName>EnigmaConsole</AssemblyName>
+    <RootNamespace>EnigmaCore</RootNamespace>
+    <AssemblyName>EnigmaCore</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,17 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="FactoryBase.cs" />
+    <Compile Include="OffsetableRotor.cs" />
+    <Compile Include="Plugboard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EnigmaCore\EnigmaCore.csproj">
-      <Project>{a671a1c4-053f-491b-b669-9b3ab47c34d2}</Project>
-      <Name>EnigmaCore</Name>
-    </ProjectReference>
+    <Compile Include="Reflector.cs" />
+    <Compile Include="ReflectorBase.cs" />
+    <Compile Include="ReflectorFactory.cs" />
+    <Compile Include="Rotor.cs" />
+    <Compile Include="RotorBase.cs" />
+    <Compile Include="RotorFactory.cs" />
+    <Compile Include="Spindle.cs" />
+    <Compile Include="ThinReflector.cs" />
+    <Compile Include="ThinRotor.cs" />
+    <Compile Include="Wiring.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnigmaConsole", "EnigmaConsole\EnigmaConsole.csproj", "{64687FFD-CBAD-4C37-B1FE-CF5771E7C37C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnigmaCore", "EnigmaCore\EnigmaCore.csproj", "{A671A1C4-053F-491B-B669-9B3AB47C34D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{64687FFD-CBAD-4C37-B1FE-CF5771E7C37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64687FFD-CBAD-4C37-B1FE-CF5771E7C37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64687FFD-CBAD-4C37-B1FE-CF5771E7C37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A671A1C4-053F-491B-B669-9B3AB47C34D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A671A1C4-053F-491B-B669-9B3AB47C34D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A671A1C4-053F-491B-B669-9B3AB47C34D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A671A1C4-053F-491B-B669-9B3AB47C34D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
