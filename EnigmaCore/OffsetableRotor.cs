@@ -40,11 +40,11 @@
             if (val > 25)
                 throw new ArgumentException("Value cannot be higher than 25", nameof(val));
 
-            val = Recede(val, this.Offset);
+            val = RotorBase.Recede(val, this.Offset);
 
             int temp = base.RightInput(val);
 
-            temp = Advance(temp, this.Offset);
+            temp = RotorBase.Advance(temp, this.Offset);
 
             return temp;
         }
@@ -56,11 +56,11 @@
             if (val > 25)
                 throw new ArgumentException("Value cannot be higher than 25", nameof(val));
 
-            val = Recede(val, this.Offset);
+            val = RotorBase.Recede(val, this.Offset);
 
             int temp = base.LeftInput(val);
 
-            temp = Advance(temp, this.Offset);
+            temp = RotorBase.Advance(temp, this.Offset);
 
             return temp;
         }

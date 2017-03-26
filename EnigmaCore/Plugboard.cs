@@ -24,7 +24,7 @@
             // So, the check is omitted.
 
             var temp = new List<int>();
-            foreach (var kv in swappings)
+            foreach (KeyValuePair<int, int> kv in swappings)
             {
                 if (kv.Key < 0)
                     throw new ArgumentException("Dictionary cannot contain keys lower than zero", nameof(swappings));
@@ -52,7 +52,7 @@
             {
                 this.swappings.Add(kv.Key, kv.Value);
 
-                // Reverse swappig.
+                // Reverse swapping.
                 this.swappings.Add(kv.Value, kv.Key);
             }
         }

@@ -88,11 +88,11 @@
             if (val > 25)
                 throw new ArgumentException("Value cannot be higher than 25", nameof(val));
 
-            val = Advance(val, this.Position);
+            val = RotorBase.Advance(val, this.Position);
 
             int result = Array.IndexOf<int>(this.mapping, val);
 
-            result = Recede(result, this.Position);
+            result = RotorBase.Recede(result, this.Position);
 
             return result;
         }
@@ -104,11 +104,11 @@
             if (val > 25)
                 throw new ArgumentException("Value cannot be higher than 25", nameof(val));
 
-            val = Advance(val, this.Position);
+            val = RotorBase.Advance(val, this.Position);
 
             int result = base.RightInput(val);
 
-            result = Recede(result, this.Position);
+            result = RotorBase.Recede(result, this.Position);
 
             return result;
         }
