@@ -42,7 +42,7 @@
             set
             {
                 if (value < 0)
-                    new ArgumentException("Value cannot be lower than zero", nameof(value));
+                    throw new ArgumentException("Value cannot be lower than zero", nameof(value));
 
                 int temp = (value % 26);
 
@@ -84,7 +84,7 @@
         public virtual int LeftInput(int val)
         {
             if (val < 0)
-                new ArgumentException("Value cannot be lower than zero", nameof(val));
+                throw new ArgumentException("Value cannot be lower than zero", nameof(val));
             if (val > 25)
                 throw new ArgumentException("Value cannot be higher than 25", nameof(val));
 
@@ -100,7 +100,7 @@
         public override int RightInput(int val)
         {
             if (val < 0)
-                new ArgumentException("Value cannot be lower than zero", nameof(val));
+                throw new ArgumentException("Value cannot be lower than zero", nameof(val));
             if (val > 25)
                 throw new ArgumentException("Value cannot be higher than 25", nameof(val));
 

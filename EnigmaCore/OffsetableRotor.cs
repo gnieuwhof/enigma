@@ -24,7 +24,7 @@
             set
             {
                 if (value < 0)
-                    new ArgumentException("Value cannot be lower than zero", nameof(offset));
+                    throw new ArgumentException("Value cannot be lower than zero", nameof(offset));
                 if (value > 25)
                     throw new ArgumentException("Value cannot be higher than 25", nameof(value));
 
@@ -36,7 +36,7 @@
         public override int RightInput(int val)
         {
             if (val < 0)
-                new ArgumentException("Value cannot be lower than zero", nameof(val));
+                throw new ArgumentException("Value cannot be lower than zero", nameof(val));
             if (val > 25)
                 throw new ArgumentException("Value cannot be higher than 25", nameof(val));
 
@@ -52,7 +52,7 @@
         public override int LeftInput(int val)
         {
             if (val < 0)
-                new ArgumentException("Value cannot be lower than zero", nameof(val));
+                throw new ArgumentException("Value cannot be lower than zero", nameof(val));
             if (val > 25)
                 throw new ArgumentException("Value cannot be higher than 25", nameof(val));
 

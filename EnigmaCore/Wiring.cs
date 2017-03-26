@@ -28,7 +28,7 @@
         public virtual int RightInput(int val)
         {
             if (val < 0)
-                new ArgumentException("Value cannot be lower than zero", nameof(val));
+                throw new ArgumentException("Value cannot be lower than zero", nameof(val));
             if (val > 25)
                 throw new ArgumentException("Value cannot be higher than 25", nameof(val));
 

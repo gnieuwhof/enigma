@@ -27,11 +27,11 @@
             foreach (var kv in swappings)
             {
                 if (kv.Key < 0)
-                    new ArgumentException("Dictionary cannot contain keys lower than zero", nameof(swappings));
+                    throw new ArgumentException("Dictionary cannot contain keys lower than zero", nameof(swappings));
                 if (kv.Key > 25)
                     throw new ArgumentException("Dictionary cannot contain keys higher than 25", nameof(swappings));
                 if (kv.Value < 0)
-                    new ArgumentException("Dictionary cannot contain values lower than zero", nameof(swappings));
+                    throw new ArgumentException("Dictionary cannot contain values lower than zero", nameof(swappings));
                 if (kv.Value > 25)
                     throw new ArgumentException("Dictionary cannot contain values higher than 25", nameof(swappings));
                 if (temp.Contains(kv.Key))
